@@ -1,7 +1,5 @@
 import { Helmet } from "react-helmet-async";
 
-
-
 const Single = () => {
     return (
         <div>
