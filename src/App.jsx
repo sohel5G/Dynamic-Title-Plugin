@@ -1,19 +1,8 @@
 
-import { Link, Outlet, useLocation } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import './App.css'
-import { useEffect } from 'react';
 
 function App() {
-
-  const location = useLocation()
-
-  useEffect(() => {
-    location.pathname === '/' ? 
-    document.title = `Title - Home` : 
-    document.title = `Title ${location.pathname.replace('/', '- ')}`;
-
-    location.state ? document.title = `Title - ${location.state}` : ''
-  }, [location])
 
   return (
     <>
